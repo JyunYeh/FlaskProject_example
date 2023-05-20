@@ -9,6 +9,10 @@ def hello_world():
     return render_template('index.html', list = list)
 
 
+@app.route('/head')
+def head():
+    return render_template('header.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
+
